@@ -4,8 +4,8 @@
 	@version: 0.1.1
 -->
 <?php
-
-	require_once 'functions/cryption.php';
+	session_start();
+	require_once 'functions/clogin.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,14 @@
 
 				</div>
 				<div id="dbody_middle">
+				<?php
+					if(isset($_SESSION['login']['logged']))
+					{
+						echo "set";
+					}
 
+					try_log("kev@gailer.net","123");
+				?>
 				</div>
 				<div id="dbody_right">
 

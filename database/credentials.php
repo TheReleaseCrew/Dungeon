@@ -5,7 +5,7 @@
 -->
 <?php
 	$host = "localhost";
-	$dbname = "";
+	$dbname = "dungeon";
 	$user = "root";
 	$pass = "";
 ?>
