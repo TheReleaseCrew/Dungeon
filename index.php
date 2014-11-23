@@ -5,7 +5,8 @@
 -->
 <?php
 	session_start();
-	require_once 'functions/clogin.php';
+	require_once 'functions/login/clogin.php';
+	require_once 'functions/register/cRegister.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,10 +26,15 @@
 				</div>
 				<div id="dbody_middle">
 				<?php
+
+					//register("kev@gailer.net","123");
+
 					if(isset($_SESSION['login']['logged']))
 					{
 						echo "set";
 					}
+					else
+						echo "not set";
 
 					try_log("kev@gailer.net","123");
 				?>
