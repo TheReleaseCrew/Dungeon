@@ -34,11 +34,10 @@
 				if(hash_equals($row['password'],hash_blowfish($password,$row['salt'])))
 				{
 					$_SESSION['login']['logged'] = true;
-					echo "true";
 				}
 				else
 				{
-					echo "false";
+					$_SESSION['login']['logged'] = false; //means it failed
 				}
 			}
 		}
@@ -48,7 +47,6 @@
 
 	function check_if_email_is_valid($email)
 	{
-		//not implemented yet
-		return true;
+		return filter_var( $email, FILTER_VALIDATE_EMAIL );
 	}
 ?>

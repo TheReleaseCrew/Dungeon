@@ -4,5 +4,9 @@
 	@version: 0.1.1
 -->
 <?php
-	#code for loggout
+
+	function destroy()
+	{
+		session_destroy();
+	}
 ?>

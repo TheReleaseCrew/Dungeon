@@ -27,16 +27,7 @@
 				<div id="dbody_middle">
 				<?php
 
-					//register("kev@gailer.net","123");
-
-					if(isset($_SESSION['login']['logged']))
-					{
-						echo "set";
-					}
-					else
-						echo "not set";
-
-					try_log("kev@gailer.net","123");
+					
 				?>
 				</div>
 				<div id="dbody_right">
